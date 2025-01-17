@@ -1,4 +1,6 @@
 import onestrategy.*;
+import twoobserver.*;
+import twoobserver.NewsFeed;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,5 +29,31 @@ public class Main {
         }
 */
         // problem 2 observer pattern
+/*
+        // Create a NewsFeed
+        NewsFeed newsFeed = new NewsFeed();
+
+        // Create Subscribers
+        Subscriber emailSubscriber1 = new EmailSubscriber("user1@example.com");
+        Subscriber emailSubscriber2 = new EmailSubscriber("user2@example.com");
+        Subscriber appSubscriber1 = new AppSubscriber(101);
+        Subscriber appSubscriber2 = new AppSubscriber(102);
+
+        // Add Subscribers to NewsFeed
+        newsFeed.addSubscriber(emailSubscriber1);
+        newsFeed.addSubscriber(emailSubscriber2);
+        newsFeed.addSubscriber(appSubscriber1);
+        newsFeed.addSubscriber(appSubscriber2);
+
+        // Notify Subscribers
+        System.out.println("Publishing news: 'Big Sale on Electronics!'");
+        newsFeed.notifySubscribers("Big Sale on Electronics!");
+
+        // Remove a Subscriber and notify again
+        newsFeed.removeSubscriber(emailSubscriber1);
+        System.out.println("\nPublishing news: 'New Smartphone Released!'");
+        newsFeed.notifySubscribers("New Smartphone Released!");
+*/
+        // problem 3 decorator pattern
     }
 }
