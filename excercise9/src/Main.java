@@ -1,6 +1,6 @@
 import onestrategy.*;
 import twoobserver.*;
-import twoobserver.NewsFeed;
+import threedecorator.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -55,6 +55,18 @@ public class Main {
         newsFeed.notifySubscribers("New Smartphone Released!");
 */
         // problem 3 decorator pattern
+/*
+        // Create a basic SendDataService instance
+        SendDataService basicService = new SendDataServiceBasic("http://example.com");
 
+        // Wrap it with an EncryptorDecorator
+        SendDataService encryptedService = new EncryptorDecorator(basicService);
+
+        // Wrap the encrypted service with a CompressorDecorator
+        SendDataService compressedEncryptedService = new CompressorDecorator(encryptedService);
+
+        // Send data with both encryption and compression
+        compressedEncryptedService.sendData("Hello, World!");
+*/
     }
 }
