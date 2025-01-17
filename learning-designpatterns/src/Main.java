@@ -1,6 +1,7 @@
 import decorator.*;
 import observer.*;
 import strategy.*;
+import visitor.*;
 public class Main {
     public static void main(String[] args) {
         // strategy pattern
@@ -53,8 +54,8 @@ public class Main {
         System.out.println("Triggering NEW_ITEM event after unsubscribing MobileAppListener:");
         notificationService.notifyListeners(Event.NEW_ITEM);
 */
-        // [optional] Decorator pattern
-// /*
+        // Decorator pattern [optional]
+/*
         INotifier notifyAll = new FacebookDecorator(new WhatsAppDecorator(new Notifier("Jawa0056")));
         notifyAll.send("The Easiest Way");
 
@@ -62,6 +63,10 @@ public class Main {
 
         INotifier notifyFbMail = new FacebookDecorator(new Notifier("Jawa0057"));
         notifyFbMail.send("The Easiest Way");
+*/
+        // Visitor pattern
+// /*
+
 // */
     }
 }
