@@ -55,5 +55,6 @@ public class Main {
         newsFeed.notifySubscribers("New Smartphone Released!");
 */
         // problem 3 decorator pattern
+
     }
 }

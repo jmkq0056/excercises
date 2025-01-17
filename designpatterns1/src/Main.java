@@ -1,3 +1,4 @@
+import decorator.*;
 import observer.*;
 import strategy.*;
 public class Main {
@@ -54,7 +55,13 @@ public class Main {
 */
         // [optional] Decorator pattern
 // /*
+        INotifier notifyAll = new FacebookDecorator(new WhatsAppDecorator(new Notifier("Jawa0056")));
+        notifyAll.send("The Easiest Way");
 
+        System.out.println("==========================================");
+
+        INotifier notifyFbMail = new FacebookDecorator(new Notifier("Jawa0057"));
+        notifyFbMail.send("The Easiest Way");
 // */
     }
 }
