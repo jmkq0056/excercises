@@ -58,5 +58,19 @@ public class Main {
         System.out.println("Exercise 4:");
         System.out.println("TrafficDepartment traffic lights:");
         System.out.println(trafficDepartment.getTrafficLights());
+
+        // Test PlaygroundDepartment Observer
+        PlayGroundDepartment playGroundDepartment = new PlayGroundDepartment();
+        cityMap.addListener(playGroundDepartment);
+
+        GPSPosition pos5 = new GPSPosition(67.89, 45.67);
+        PlayGround newPlayground = new PlayGround("PG456", pos5, 50);
+
+        cityMap.addStreetFurniture(newPlayground); // Should notify the PlaygroundDepartment
+
+
+        // EXTRA CODE JUST TO SEE NOT PART OF EXAM
+        System.out.println("PlaygroundDepartment playgrounds:");
+        System.out.println(playGroundDepartment.getPlayGrounds());
     }
 }
