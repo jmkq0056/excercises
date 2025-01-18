@@ -29,7 +29,7 @@ public class Main {
         }
 */
         // problem 2 observer pattern
-/*
+
         // Create a NewsFeed
         NewsFeed newsFeed = new NewsFeed();
 
@@ -53,7 +53,7 @@ public class Main {
         newsFeed.removeSubscriber(emailSubscriber1);
         System.out.println("\nPublishing news: 'New Smartphone Released!'");
         newsFeed.notifySubscribers("New Smartphone Released!");
-*/
+
         // problem 3 decorator pattern
 /*
         // Create a basic SendDataService instance

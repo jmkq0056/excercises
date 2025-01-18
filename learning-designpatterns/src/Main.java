@@ -1,5 +1,6 @@
 import decorator.*;
 import observer.*;
+import observer.EventListener;
 import strategy.*;
 import visitor.*;
 
@@ -27,7 +28,7 @@ public class Main {
         }
 */
         // Oberserver Pattern
-/*
+
         NotificationService notificationService = new NotificationService();
 
         // Listeners
@@ -56,7 +57,7 @@ public class Main {
         System.out.println("\n");
         System.out.println("Triggering NEW_ITEM event after unsubscribing MobileAppListener:");
         notificationService.notifyListeners(Event.NEW_ITEM);
-*/
+
         // Decorator pattern [optional]
 /*
         INotifier notifyAll = new FacebookDecorator(new WhatsAppDecorator(new Notifier("Jawa0056")));
@@ -68,7 +69,7 @@ public class Main {
         notifyFbMail.send("The Easiest Way");
 */
         // Visitor pattern
-// /*
+/*
         List<Client> clients = new ArrayList<>();
         clients.add(new Bank("Bank of America", "123 Wall St", "001", 10));
         clients.add(new Company("Tech Corp", "456 Silicon Ave", "002", 500));
@@ -77,6 +78,6 @@ public class Main {
 
         InsuranceMessagingVisitor visitor = new InsuranceMessagingVisitor();
         visitor.sendInsuranceMails(clients);
-// */
+*/
     }
 }

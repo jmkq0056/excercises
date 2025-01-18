@@ -30,7 +30,7 @@ public class Main {
         System.out.println("After removal: " + set); // [Apple, Cherry]
 */
         // 3 HashMap
-/*
+
         Map<String, Integer> map = new HashMap<>();
         map.put("Alice", 25);
         map.put("Bob", 30);
@@ -40,7 +40,7 @@ public class Main {
         System.out.println("Value for Alice: " + map.getOrDefault("Alice", 0));
         map.remove("Bob");
         System.out.println("After removal: " + map); // {Alice=28}
-*/
+
         // 4 Queue Example: LinkedList
 /*
         Queue<String> queue = new LinkedList<>();
