@@ -2,6 +2,9 @@ import decorator.*;
 import observer.*;
 import strategy.*;
 import visitor.*;
+
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
         // strategy pattern
@@ -66,7 +69,14 @@ public class Main {
 */
         // Visitor pattern
 // /*
+        List<Client> clients = new ArrayList<>();
+        clients.add(new Bank("Bank of America", "123 Wall St", "001", 10));
+        clients.add(new Company("Tech Corp", "456 Silicon Ave", "002", 500));
+        clients.add(new Resident("John Doe", "789 Elm St", "003", "Gold"));
+        clients.add(new Restaurant("Tasty Bites", "321 Food St", "004", true));
 
+        InsuranceMessagingVisitor visitor = new InsuranceMessagingVisitor();
+        visitor.sendInsuranceMails(clients);
 // */
     }
 }
