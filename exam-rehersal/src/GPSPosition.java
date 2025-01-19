@@ -13,7 +13,7 @@ public class GPSPosition {
     public boolean equals (Object o){
         if (this == o) return true;
 
-        if(o == null || getClass() != getClass()) return false;
+        if(o == null || getClass() !=  o.getClass()) return false;
 
         GPSPosition that = (GPSPosition) o;
         return x == that.x && y ==that.y;

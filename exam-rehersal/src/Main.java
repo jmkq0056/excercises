@@ -66,6 +66,7 @@ public class Main {
         GPSPosition pos5 = new GPSPosition(67.89, 45.67);
         PlayGround newPlayground = new PlayGround("PG456", pos5, 50);
 
+
         cityMap.addStreetFurniture(newPlayground); // Should notify the PlaygroundDepartment
 
 

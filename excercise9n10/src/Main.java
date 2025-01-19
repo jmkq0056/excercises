@@ -1,6 +1,7 @@
 import onestrategy.*;
 import twoobserver.*;
 import threedecorator.*;
+import fourvisitor.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +30,7 @@ public class Main {
         }
 */
         // problem 2 observer pattern
-
+/*
         // Create a NewsFeed
         NewsFeed newsFeed = new NewsFeed();
 
@@ -53,7 +54,7 @@ public class Main {
         newsFeed.removeSubscriber(emailSubscriber1);
         System.out.println("\nPublishing news: 'New Smartphone Released!'");
         newsFeed.notifySubscribers("New Smartphone Released!");
-
+*/
         // problem 3 decorator pattern
 /*
         // Create a basic SendDataService instance
@@ -67,6 +68,28 @@ public class Main {
 
         // Send data with both encryption and compression
         compressedEncryptedService.sendData("Hello, World!");
+*/
+        // problem 4 visitor pattern
+/*
+        TreeMathExpression expression = new OperationNode("*",
+                new OperationNode("+", new TerminalNode(3), new TerminalNode(5)),
+                new OperationNode("-", new TerminalNode(10), new TerminalNode(2))
+        );
+
+        // Count operations
+        CountOperationsVisitor countOperationsVisitor = new CountOperationsVisitor();
+        expression.accept(countOperationsVisitor);
+        System.out.println("Number of operations: " + countOperationsVisitor.getOperationCount());
+
+        // Count integers
+        CountIntegersVisitor countIntegersVisitor = new CountIntegersVisitor();
+        expression.accept(countIntegersVisitor);
+        System.out.println("Number of integers: " + countIntegersVisitor.getIntegerCount());
+
+        // Evaluate the expression
+        EvaluateExpressionVisitor evaluateExpressionVisitor = new EvaluateExpressionVisitor();
+        expression.accept(evaluateExpressionVisitor);
+        System.out.println("Result of the expression: " + evaluateExpressionVisitor.getResult());
 */
     }
 }
